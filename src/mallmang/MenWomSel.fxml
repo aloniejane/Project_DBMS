@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.MenWomSelController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/8dZewRiQeWUwvO3oUuPm_mandalay-bay-retail-resort-shops-shopping-bags.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="769.0" fitWidth="808.0" layoutX="570.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/men-and-women-toilet-icon-themes-that-looks-simple-and-modern-vector-illustration.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="men" fitHeight="661.0" fitWidth="300.0" layoutX="612.0" layoutY="222.0" onMouseClicked="#menwin" onMouseEntered="#menhover" onMouseExited="#menhoverover" pickOnBounds="true" preserveRatio="true" rotate="1.2" />
+      <ImageView fx:id="women" fitHeight="874.0" fitWidth="320.0" layoutX="1018.0" layoutY="235.0" onMouseClicked="#womenwin" onMouseEntered="#womenhover" onMouseExited="#womenhoverover" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="back" layoutX="14.0" layoutY="-10.0" onMouseClicked="#handleBack" text="&lt;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1836.0" layoutY="22.0" onMouseClicked="#handleClose" prefHeight="93.0" prefWidth="58.0" stylesheets="@close.css" text="X">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MallMang.jnlp">
+  <information>
+    <title>MallMang</title>
+    <vendor>Bryan Caldeira</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MallMang.jar" size="17548649" download="eager" />
+    <jar href="lib\activation.jar" size="55147" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\mail.jar" size="462098" download="eager" />
+    <jar href="lib\ojdbc7.jar" size="3397734" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MallMang" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mallmang.MallMang"  name="MallMang" />
+  <update check="always"/>
+</jnlp>

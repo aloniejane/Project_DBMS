@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.FirstController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Webp.net-resizeimage%20(1).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="788.0" fitWidth="1393.0" layoutX="264.0" layoutY="115.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/white_back.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1579.0" layoutY="126.0" onMouseClicked="#handleClose" prefHeight="93.0" prefWidth="62.0" stylesheets="@close.css" text="X" textAlignment="CENTER">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="331.0" fitWidth="345.0" layoutX="502.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/admin.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="321.0" fitWidth="361.0" layoutX="1063.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user.jpg" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="admin" fitHeight="437.0" fitWidth="502.0" layoutX="426.0" layoutY="295.0" onMouseClicked="#adminwin" onMouseExited="#adminhoverover" onMouseMoved="#adminhover" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="user" fitHeight="437.0" fitWidth="502.0" layoutX="1000.0" layoutY="297.0" onMouseClicked="#userwin" onMouseExited="#userhoverover" onMouseMoved="#userhover" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label fx:id="lab1" alignment="CENTER" layoutX="536.0" layoutY="733.0" prefHeight="78.0" prefWidth="202.0" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab2" layoutX="1180.0" layoutY="734.0" prefHeight="77.0" prefWidth="201.0" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1314.0" layoutY="798.0" prefHeight="105.0" prefWidth="334.0" text="Mall ManagerX">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="235.0" fitWidth="698.0" layoutX="616.0" layoutY="89.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/welcome.gif" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="0.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label fx:id="minz" layoutX="1533.0" layoutY="96.0" onMouseClicked="#min" prefHeight="135.0" prefWidth="23.0" text="-">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+.text-area *.text {
+    -fx-text-alignment:center;
+}
+
+
+.text-area
+{
+    text-area-background: #DA5244;
+}
+
+.text-area .content{
+    -fx-background-color: text-area-background;
+}

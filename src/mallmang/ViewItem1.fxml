@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="1608.0" style="-fx-background-color: RED;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.ViewItem1Controller">
+   <children>
+      <AnchorPane fx:id="bg" layoutX="6.0" layoutY="7.0" prefHeight="786.0" prefWidth="1596.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <Label fx:id="small" alignment="CENTER" layoutX="913.0" layoutY="226.0" onMouseClicked="#SmallSize" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: white;" text="S">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="medium" alignment="CENTER" layoutX="1051.0" layoutY="226.0" onMouseClicked="#MediumSize" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: white;" text="M">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="large" alignment="CENTER" layoutX="1175.0" layoutY="226.0" onMouseClicked="#LargeSize" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: white;" text="L">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="des" alignment="CENTER" layoutX="703.0" layoutY="59.0" prefHeight="93.0" prefWidth="725.0" textFill="RED">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iv" fitHeight="465.0" fitWidth="496.0" layoutX="134.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="add" layoutX="851.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#Add" prefHeight="75.0" prefWidth="428.0" style="-fx-background-color: #ff3333; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #ffffff;" stylesheets="@shopping_but.css" text=" Add to Cart">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/cart.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ChoiceBox fx:id="quantity" layoutX="1092.0" layoutY="296.0" prefHeight="31.0" prefWidth="61.0" />
+      <Label fx:id="qtytxt" alignment="CENTER" layoutX="1096.0" layoutY="301.0" prefHeight="19.0" prefWidth="27.0" style="-fx-background-color: #ffffff;" text="1" />
+      <Label layoutX="977.0" layoutY="290.0" prefHeight="42.0" prefWidth="99.0" text="Quantity">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cost" alignment="CENTER" layoutX="970.0" layoutY="167.0" prefHeight="61.0" prefWidth="191.0" textFill="RED">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="bk" alignment="CENTER" layoutX="1542.0" layoutY="14.0" onMouseClicked="#handleback" prefHeight="70.0" prefWidth="44.0" stylesheets="@close.css" text="X">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

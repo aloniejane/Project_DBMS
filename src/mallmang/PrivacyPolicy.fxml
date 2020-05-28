@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="782.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.PrivacyPolicyController">
+   <children>
+      <AnchorPane prefHeight="32.0" prefWidth="782.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="pback" layoutX="7.0" layoutY="-8.0" onMouseClicked="#handleback" prefHeight="66.0" prefWidth="62.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="296.0" layoutY="14.0" prefHeight="32.0" prefWidth="190.0" text="Privacy Policy" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TextArea fx:id="txtara" layoutX="50.0" layoutY="75.0" prefHeight="364.0" prefWidth="682.0" text=" try &#10;            {&#10;                &#10;                //connects to database&#10;                Class.forName(&quot;oracle.jdbc.OracleDriver&quot;);&#10;                Connection  con= DriverManager.getConnection(&quot;jdbc:oracle:thin:@localhost:1521:XE&quot;,&quot;DICTIONARY&quot;,&quot;dictionary&quot;);&#10;                &#10;                //inserts values to LOGIN table&#10;                Statement stat=con.createStatement();&#10;                String query=&quot;insert into LOGIN(NAME,PASS)values('&quot;+sname+&quot;','&quot;+spass+&quot;')&quot;;&#10;                stat.executeUpdate(query);&#10;&#9;&#9;stat.close();&#10;                    &#10;              }&#10;&#9;      catch (SQLException ex) &#10;    &#9;     {&#10;                Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);&#10;            }  &#10;                " />
+      <Button fx:id="ok" layoutX="334.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#handleOk" prefHeight="45.0" prefWidth="114.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black; -fx-border-width: 2px;" stylesheets="@warningbut.css" text="OK" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="close" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.DeleteController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/resize-15745503681512231061EkzuK.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="815.0" layoutY="67.0" prefHeight="123.0" prefWidth="291.0" text="Delete" underline="true">
+         <font>
+            <Font size="96.0" />
+         </font></Label>
+      <Label fx:id="back" layoutX="24.0" layoutY="-4.0" onMouseClicked="#handlebk" text="&lt;">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1831.0" layoutY="14.0" onMouseClicked="#handleclose" prefHeight="105.0" prefWidth="65.0" text="X">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <MenuBar blendMode="COLOR_BURN" layoutX="741.0" layoutY="231.0" opacity="0.67" prefHeight="68.0" prefWidth="416.0" stylesheets="@Add.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Clothes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Delete_Men" text="Men" />
+                  <MenuItem mnemonicParsing="false" onAction="#Delete_Women" text="Women" />
+                  <MenuItem mnemonicParsing="false" onAction="#Delete_Clothes" text="Clothes" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Electronics ">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Delete_ELEctronics" text="Electronics" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="menpane" layoutX="171.0" layoutY="371.0" prefHeight="523.0" prefWidth="1575.0" visible="false">
+         <children>
+            <Label layoutX="200.0" layoutY="10.0" prefHeight="68.0" prefWidth="168.0" text="Men" underline="true">
+               <font>
+                  <Font size="64.0" />
+               </font></Label>
+            <Label layoutX="420.0" layoutY="109.0" text="Enter Category ID: ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CatagoryID" layoutX="739.0" layoutY="109.0" promptText="Enter Category Id...">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button layoutX="640.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#delMen" prefHeight="39.0" prefWidth="266.0" stylesheets="@shopping_but.css" text="SUBMIT">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <AnchorPane fx:id="view" layoutX="620.0" layoutY="350.0" prefHeight="265.0" prefWidth="445.0" visible="false">
+               <children>
+                  <Label text="Item Deleted:">
+                     <font>
+                        <Font size="31.0" />
+                     </font></Label>
+                  <Label layoutX="18.0" layoutY="62.0" text="Catagory ID">
+                     <font>
+                        <Font size="21.0" />
+                     </font></Label>
+                  <Label fx:id="mcat" layoutX="163.0" layoutY="62.0" prefHeight="21.0" prefWidth="161.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font></Label>
+                  <Label fx:id="cost" layoutX="163.0" layoutY="201.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font></Label>
+                  <Label layoutX="18.0" layoutY="201.0" prefHeight="28.0" prefWidth="66.0" text="Cost">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="106.0" text="Description">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="des" layoutX="165.0" layoutY="106.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="146.0" text="Colour">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="color" layoutX="165.0" layoutY="146.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="womenpane" layoutX="171.0" layoutY="371.0" prefHeight="523.0" prefWidth="1573.0" visible="false">
+         <children>
+            <Label layoutX="200.0" layoutY="10.0" text="Women" underline="true">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="420.0" layoutY="109.0" text="Enter Catogory ID:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CatagoryID1" layoutX="739.0" layoutY="109.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button layoutX="640.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#delwomen" prefHeight="39.0" prefWidth="266.0" stylesheets="@shopping_but.css" text="SUBMIT">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <AnchorPane fx:id="view1" layoutX="620.0" layoutY="350.0" prefHeight="265.0" prefWidth="445.0" visible="false">
+               <children>
+                  <Label text="Item Deleted:">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="62.0" text="Catagory ID">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wcat1" layoutX="163.0" layoutY="62.0" prefHeight="21.0" prefWidth="161.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cost1" layoutX="163.0" layoutY="201.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="201.0" prefHeight="28.0" prefWidth="66.0" text="Cost">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="106.0" text="Description">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="des1" layoutX="163.0" layoutY="106.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="146.0" text="Colour">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="color1" layoutX="163.0" layoutY="146.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="elecpane" layoutX="171.0" layoutY="371.0" prefHeight="523.0" prefWidth="1573.0" visible="false">
+         <children>
+            <Label layoutX="200.0" layoutY="10.0" text="Clothes" underline="true">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="420.0" layoutY="109.0" text="Enter Cloth No:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="clothno1" layoutX="739.0" layoutY="109.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button layoutX="640.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#delelec" prefHeight="39.0" prefWidth="266.0" stylesheets="@shopping_but.css" text="SUBMIT">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <AnchorPane fx:id="view3" layoutX="620.0" layoutY="350.0" prefHeight="265.0" prefWidth="445.0" visible="false">
+               <children>
+                  <Label text="Item Deleted:">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="62.0" text="Cloth No">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cno" layoutX="163.0" layoutY="62.0" prefHeight="21.0" prefWidth="161.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="106.0" text="Cloth Size">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="csize" layoutX="163.0" layoutY="106.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="146.0" text="Category ID">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Catidc" layoutX="163.0" layoutY="147.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="190.0" text="Quantity">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="quan" layoutX="163.0" layoutY="189.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="elecpane1" layoutX="171.0" layoutY="371.0" prefHeight="523.0" prefWidth="1573.0" visible="false">
+         <children>
+            <Label layoutX="200.0" layoutY="10.0" text="Electronics" underline="true">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="420.0" layoutY="109.0" text="Enter ENo:">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Elecno" layoutX="739.0" layoutY="109.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Button layoutX="640.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#deleteE" prefHeight="39.0" prefWidth="266.0" stylesheets="@shopping_but.css" text="SUBMIT">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <AnchorPane fx:id="view4" layoutX="620.0" layoutY="350.0" prefHeight="256.0" prefWidth="445.0" visible="false">
+               <children>
+                  <Label text="Item Deleted:">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="62.0" text="Electronic No">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="eno1" layoutX="192.0" layoutY="62.0" prefHeight="21.0" prefWidth="161.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="100.0" text="Type">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="type1" layoutX="192.0" layoutY="100.0" prefHeight="12.0" prefWidth="161.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="146.0" text="Model">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="model1" layoutX="192.0" layoutY="146.0" prefHeight="22.0" prefWidth="174.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="196.0" text="Brand">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pricee1" layoutX="192.0" layoutY="247.0" prefHeight="43.0" prefWidth="159.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="247.0" text="Price">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="brand1" layoutX="192.0" layoutY="196.0" prefHeight="30.0" prefWidth="174.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="equan1" layoutX="192.0" layoutY="299.0" text="Label">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="299.0" text="Quantity">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

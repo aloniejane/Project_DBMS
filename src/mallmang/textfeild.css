@@ -1,0 +1,16 @@
+.text-field{
+    -fx-text-fill: #EF2511;
+    
+}
+
+
+
+
+
+.text-field:hover 
+{
+        -fx-text-fill: #ffffff;
+        -fx-background-color: #F7722E;   
+        -fx-border-color: #ffffff;
+        -fx-border-width: 2px;
+}

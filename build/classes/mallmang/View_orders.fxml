@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.View_ordersController">
+   <children>
+      <ImageView fx:id="close" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/resize-15750629242027951381a363414be46b77ed99b353958fd7d470.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="683.0" layoutY="56.0" text="View Orders " textFill="WHITE" underline="true">
+         <font>
+            <Font name="Arial" size="96.0" />
+         </font>
+      </Label>
+      <Label fx:id="back" layoutX="24.0" layoutY="-2.0" onMouseClicked="#handleback" text="&lt;" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1831.0" layoutY="19.0" onMouseClicked="#handleclose" prefHeight="105.0" prefWidth="60.0" stylesheets="@close.css" text="X" textFill="WHITE">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <TableView fx:id="o_table" layoutX="322.0" layoutY="227.0" prefHeight="737.0" prefWidth="1258.0">
+        <columns>
+          <TableColumn fx:id="col_userid" prefWidth="200.0" text="UserId" />
+          <TableColumn fx:id="col_itemid" prefWidth="200.0" text="Item Id" />
+            <TableColumn fx:id="col_des" prefWidth="500.0" text="Description" />
+            <TableColumn fx:id="col_quan" minWidth="0.0" prefWidth="200.0" text="Quantity" />
+            <TableColumn fx:id="col_cost" prefWidth="150.0" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+
+
+.label{
+    -fx-text-fill: #FB2712; 
+}
+
+.label:hover 
+{
+        -fx-text-fill: #F7722E;
+        -fx-underline:true;
+      
+         
+}

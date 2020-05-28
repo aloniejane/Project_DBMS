@@ -1,0 +1,12 @@
+.choice-box .menu-item > .label{
+    -fx-font-size:25pt;
+}
+
+.choice-box {
+    -fx-font-size:25pt;
+}
+
+
+.choice-box .menu-item:focused {
+    -fx-background-color:  #FF7F69;
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.UserMainController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" onMouseClicked="#handleBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/98834-full_pastel-colors-wallpapers-69-background-pictures.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="1829.0" layoutY="14.0" onMouseClicked="#handleClose" prefHeight="93.0" prefWidth="68.0" stylesheets="@close.css" text="X">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="544.0" fitWidth="581.0" layoutX="244.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/clothes.gif" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="616.0" fitWidth="544.0" layoutX="1125.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/elec.gif" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="clothes" fitHeight="654.0" fitWidth="655.0" layoutX="189.0" layoutY="173.0" onMouseClicked="#Clotheswin" onMouseEntered="#clotheshover" onMouseExited="#clotheshoverover" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></ImageView>
+      <ImageView fx:id="elec" fitHeight="654.0" fitWidth="655.0" layoutX="1070.0" layoutY="173.0" onMouseClicked="#Elecwin" onMouseEntered="#elechover" onMouseExited="#elechoverover" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></ImageView>
+      <Text fx:id="lab1" layoutX="270.0" layoutY="967.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: #ffffff; -fx-stroke-width: 3px; -fx-font-family: Bookman; -fx-font-size: 100;" textAlignment="CENTER" wrappingWidth="494.0">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Text fx:id="lab2" layoutX="1084.0" layoutY="967.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: #ffffff; -fx-stroke-width: 3px; -fx-font-family: Bookman; -fx-font-size: 100;" textAlignment="CENTER" wrappingWidth="627.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="63.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#handleBack" prefHeight="55.0" prefWidth="123.0" style="-fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;" stylesheets="@shopping_but.css" text="Log Out">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

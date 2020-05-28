@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mallmang.VLastController">
+   <children>
+      <AnchorPane prefHeight="86.0" prefWidth="1920.0" style="-fx-background-color: FB2712;">
+         <children>
+            <Label alignment="CENTER" layoutX="1857.0" layoutY="11.0" onMouseClicked="#close" prefHeight="70.0" prefWidth="43.0" stylesheets="@close.css" text="X">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="270.0" layoutY="167.0" text="Thank You">
+         <font>
+            <Font name="System Italic" size="300.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="str1" fitHeight="70.0" fitWidth="83.0" layoutX="809.0" layoutY="749.0" onMouseClicked="#first" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-shape-md.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="str2" fitHeight="70.0" fitWidth="83.0" layoutX="912.0" layoutY="749.0" onMouseClicked="#second" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-shape-md.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="str3" fitHeight="70.0" fitWidth="83.0" layoutX="1014.0" layoutY="749.0" onMouseClicked="#third" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-shape-md.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="str4" fitHeight="70.0" fitWidth="83.0" layoutX="1115.0" layoutY="749.0" onMouseClicked="#fourth" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-shape-md.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="str5" fitHeight="70.0" fitWidth="83.0" layoutX="1209.0" layoutY="749.0" onMouseClicked="#fifth" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/star-shape-md.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="543.0" layoutY="758.0" text="Feedback:" textFill="#c4a000">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="762.0" layoutY="893.0" mnemonicParsing="false" onMouseClicked="#Done" prefHeight="102.0" prefWidth="377.0" style="-fx-background-color: #c4a000;" text="Done" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
